@@ -55,34 +55,54 @@ title = "Hugo Serif Theme"
     copyright_text = 'Free Hugo theme by <a class="zerostatic" href="https://www.zerostatic.io">www.zerostatic.io</a>'
 
 [menu]
-  # Main Menu
-  [[menu.main]]
-    name = "Services"
-    url = "/services/"
-    weight = 1
+# Main Menu
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
 
-  [[menu.main]]
-    name = "Team"
-    url = "/team/"
-    weight = 2
+[[menu.main]]
+name = "Pottery"
+url = "/pottery/"
+weight = 2
 
-  [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 3
+[[menu.main]]
+name = "Yoga"
+url = "/yoga/"
+weight = 3
 
-  [[menu.main]]
-    name = "Contact"
-    url = "/contact/"
-    weight = 4
+[[menu.main]]
+name = "Writing"
+url = "/writing/"
+weight = 4
 
-  # Footer Menu
-  [[menu.footer]]
-    name = "Home"
-    url = "/"
-    weight = 1
+[[menu.main]]
+name = "Workshops"
+url = "/workshops/"
+weight = 5
 
-  [[menu.footer]]
-    name = "Contact"
-    url = "/contact/"
-    weight = 2
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 6
+
+[[menu.main]]
+name = "Blog"
+url = "/blog/"
+weight = 7
+
+[[menu.main]]
+name = "Contact"
+url = "/contact/"
+weight = 8
+
+# Footer Menu
+[[menu.footer]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.footer]]
+name = "Contact"
+url = "/contact/"
+weight = 2
