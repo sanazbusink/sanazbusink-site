@@ -1,31 +1,41 @@
-/* Force header logo visibility (theme currently renders empty divs) */
+/* Force header logo visibility */
+#stickyHeader .logo,
+#stickyHeader .logo-mobile,
 .header .logo,
 .header .logo-mobile {
-  background-image: url("/images/logo/sanaz-logo.png");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: contain;
-  display: block;
+  background-image: url("/images/logo/sanaz-logo.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
+  display: block !important;
+  min-width: 180px;
+  min-height: 36px;
 }
 
 /* Desktop */
 @media (min-width: 768px) {
+  #stickyHeader .logo,
   .header .logo {
-    width: 220px;
-    height: 72px;
+    width: 220px !important;
+    height: 72px !important;
   }
+
+  #stickyHeader .logo-mobile,
   .header .logo-mobile {
-    display: none;
+    display: none !important;
   }
 }
 
 /* Mobile */
 @media (max-width: 767px) {
+  #stickyHeader .logo-mobile,
   .header .logo-mobile {
-    width: 180px;
-    height: 36px;
+    width: 180px !important;
+    height: 36px !important;
   }
+
+  #stickyHeader .logo,
   .header .logo {
-    display: none;
+    display: none !important;
   }
 }
