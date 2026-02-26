@@ -21,11 +21,11 @@ title = "Sanaz Business"
     show_services_button = false # show / hide the "view all services" button
 
   [params.logo]
-    mobile = "images/logo/logo-mobile.svg"
-    mobile_height = "36px"
-    desktop = "images/logo/logo.svg"
-    desktop_height = "36px"
-    alt = "Serif - A Hugo Business Theme"
+[params.logo]
+mobile = "images/logo/Sanaz Logo.png"
+mobile_height = "36px"
+desktop = "images/logo/Sanaz Logo.png"
+desktop_height = "36px"
 
   [params.fonts]
     # sets the google font link in layouts/partials/google-fonts.html
