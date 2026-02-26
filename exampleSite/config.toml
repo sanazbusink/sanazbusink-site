@@ -21,10 +21,10 @@ title = "Sanaz Busink"
     show_services_button = false # show / hide the "view all services" button
 
 [params.logo]
-mobile = "images/sanaz-logo.png"
-mobile_height = "75px"
-desktop = "images/sanaz-logo.png"
-desktop_height = "75px"
+mobile = "images/logo/sanaz-logo.png"
+mobile_height = "36px"
+desktop = "images/logo/sanaz-logo.png"
+desktop_height = "72px"
 
 [params.fonts]
 google_fonts = 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;600&display=swap'
@@ -32,7 +32,7 @@ heading = "Cormorant Garamond"
 base = "Inter"
 
   [params.colors]
-    primary = "#EC4899"
+    primary = "#9B7AAE"
     black = "#2f2f41"
     white = "#ffffff"
     white_offset = "#f6f7ff"
