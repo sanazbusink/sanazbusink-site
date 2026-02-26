@@ -32,7 +32,7 @@ heading = "Cormorant Garamond"
 base = "Inter"
 
   [params.colors]
-    primary = "#A855F7"
+    primary = "#EC4899"
     black = "#2f2f41"
     white = "#ffffff"
     white_offset = "#f6f7ff"
