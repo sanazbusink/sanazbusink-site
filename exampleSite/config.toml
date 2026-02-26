@@ -21,10 +21,9 @@ title = "Sanaz Business"
     show_services_button = false # show / hide the "view all services" button
 
   [params.logo]
-[params.logo]
-mobile = "images/logo/Sanaz Logo.png"
+mobile = "images/logo/Sanaz-Logo.png"
 mobile_height = "36px"
-desktop = "images/logo/Sanaz Logo.png"
+desktop = "images/logo/Sanaz-Logo.png"
 desktop_height = "36px"
 
   [params.fonts]
