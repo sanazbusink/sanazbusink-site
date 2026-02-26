@@ -20,8 +20,8 @@ title = "Sanaz Business"
     show_contact_box = true      # show / hide the contaxt box on the homepage
     show_services_button = false # show / hide the "view all services" button
 
-  [params.logo]
-mobile = "images/logo/sanaz-sogo.png"
+[params.logo]
+mobile = "images/logo/sanaz-logo-mobile.png"
 mobile_height = "36px"
 desktop = "images/logo/sanaz-logo.png"
 desktop_height = "36px"
