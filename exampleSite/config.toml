@@ -24,7 +24,7 @@ title = "Sanaz Business"
 mobile = "images/logo.png"
 mobile_height = "36px"
 desktop = "images/logo.png"
-desktop_height = "36px"
+desktop_height = "72px"
 
   [params.fonts]
     # sets the google font link in layouts/partials/google-fonts.html
