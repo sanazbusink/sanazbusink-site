@@ -1,0 +1,7 @@
+.header .logo img,
+.header-logo img,
+.logo img {
+  max-height: 75px !important;
+  height: auto !important;
+  width: auto !important;
+}
