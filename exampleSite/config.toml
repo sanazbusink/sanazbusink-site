@@ -1,8 +1,8 @@
-baseURL = "/"
+baseURL = "https://sanazbusink.com/"
 themesDir = "themes"
 theme = "hugo-serif-theme"
 languageCode = "en-us"
-title = "Sanaz Business"
+title = "Sanaz Busink"
 
 [module]
   [module.hugoVersion]
@@ -21,19 +21,18 @@ title = "Sanaz Business"
     show_services_button = false # show / hide the "view all services" button
 
 [params.logo]
-mobile = "images/logo.png"
-mobile_height = "36px"
-desktop = "images/logo.png"
-desktop_height = "72px"
+mobile = "images/sanaz-logo.png"
+mobile_height = "75px"
+desktop = "images/sanaz-logo.png"
+desktop_height = "75px"
 
-  [params.fonts]
-    # sets the google font link in layouts/partials/google-fonts.html
-    google_fonts = 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+Pro:wght@400;700&display=swap'
-    heading = "Playfair Display"
-    base = "Source Sans Pro"
+[params.fonts]
+google_fonts = 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;600&display=swap'
+heading = "Cormorant Garamond"
+base = "Inter"
 
   [params.colors]
-    primary = "#111111"
+    primary = "#A855F7"
     black = "#2f2f41"
     white = "#ffffff"
     white_offset = "#f6f7ff"
