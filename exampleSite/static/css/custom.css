@@ -85,3 +85,19 @@
 #stickyHeader .container {
   justify-content: space-between !important;
 }
+/* Force logo to fit inside the 40px header container */
+#stickyHeader .logo img {
+  height: 40px !important;
+  width: auto !important;
+}
+
+#stickyHeader .logo-mobile img {
+  height: 32px !important;
+  width: auto !important;
+}
+
+/* Safety: prevent clipping if any parent is hiding overflow */
+#stickyHeader,
+#stickyHeader .container {
+  overflow: visible !important;
+}
