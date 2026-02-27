@@ -39,3 +39,21 @@
     display: none !important;
   }
 }
+/* Force logo IMG to display */
+.header .logo,
+.header .logo-mobile {
+  display: block !important;
+}
+
+.header .logo img,
+.header .logo-mobile img {
+  display: block !important;
+  max-height: 72px !important;
+  height: auto !important;
+  width: auto !important;
+}
+
+/* Make sure header aligns properly */
+.header .container {
+  justify-content: space-between !important;
+}
