@@ -57,3 +57,31 @@
 .header .container {
   justify-content: space-between !important;
 }
+/* === FIX: logo is in DOM but collapsed to 0x0 === */
+#stickyHeader .logo,
+#stickyHeader .logo a,
+#stickyHeader .logo img {
+  display: block !important;
+}
+
+#stickyHeader .logo {
+  flex: 0 0 auto !important;
+  width: 260px !important;     /* ensures the container has width */
+  min-width: 260px !important;
+}
+
+#stickyHeader .logo a {
+  width: 260px !important;
+}
+
+#stickyHeader .logo img {
+  width: 260px !important;     /* force a real width */
+  max-width: 260px !important;
+  height: 72px !important;
+  object-fit: contain !important;
+}
+
+/* Stop nav from stealing space from logo */
+#stickyHeader .container {
+  justify-content: space-between !important;
+}
