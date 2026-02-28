@@ -1,105 +1,109 @@
-/* Force header logo visibility */
-#stickyHeader .logo,
-#stickyHeader .logo-mobile,
-.header .logo,
-.header .logo-mobile {
-  background-image: url("/images/logo/sanaz-logo.png") !important;
-  background-repeat: no-repeat !important;
-  background-position: left center !important;
-  background-size: contain !important;
-  display: block !important;
-  min-width: 180px;
-  min-height: 36px;
-}
+/* =========================================
+   Custom CSS (clean)
+   - Homepage hero image
+   - Simple homepage layout helpers
+   ========================================= */
 
-/* Desktop */
-@media (min-width: 768px) {
-  #stickyHeader .logo,
-  .header .logo {
-    width: 220px !important;
-    height: 72px !important;
-  }
-
-  #stickyHeader .logo-mobile,
-  .header .logo-mobile {
-    display: none !important;
-  }
-}
 /* Home hero image */
-.home-hero-media { max-width: 980px; margin: 0 auto 18px; padding: 0 20px; }
-.home-hero-media img { width: 100%; height: auto; display: block; border-radius: 18px; }
-/* Mobile */
-@media (max-width: 767px) {
-  #stickyHeader .logo-mobile,
-  .header .logo-mobile {
-    width: 180px !important;
-    height: 36px !important;
-  }
-
-  #stickyHeader .logo,
-  .header .logo {
-    display: none !important;
-  }
+.home-hero-media {
+  max-width: 980px;
+  margin: 0 auto 18px;
+  padding: 0 20px;
 }
-/* Force logo IMG to display */
-.header .logo,
-.header .logo-mobile {
-  display: block !important;
+.home-hero-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
 }
 
-.header .logo img,
-.header .logo-mobile img {
-  display: block !important;
-  max-height: 72px !important;
-  height: auto !important;
-  width: auto !important;
+/* Homepage hero text + buttons */
+.home-hero {
+  max-width: 900px;
+  margin: 28px auto 10px;
+  text-align: center;
+  padding: 0 20px;
+}
+.home-hero h1 {
+  font-size: 42px;
+  line-height: 1.1;
+  margin: 10px 0 12px;
+}
+.home-hero p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 760px;
+  margin: 0 auto 18px;
 }
 
-/* Make sure header aligns properly */
-.header .container {
-  justify-content: space-between !important;
-}
-/* === FIX: logo is in DOM but collapsed to 0x0 === */
-#stickyHeader .logo,
-#stickyHeader .logo a,
-#stickyHeader .logo img {
-  display: block !important;
+.home-cta {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
 
-#stickyHeader .logo {
-  flex: 0 0 auto !important;
-  width: 260px !important;     /* ensures the container has width */
-  min-width: 260px !important;
+/* Buttons (light-touch, should play nice with theme) */
+.home-cta .btn,
+.home-cta a.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.home-cta .btn-outline,
+.home-cta a.btn-outline {
+  background: transparent;
+  border: 1px solid currentColor;
 }
 
-#stickyHeader .logo a {
-  width: 260px !important;
+/* Three-card section */
+.home-grid {
+  max-width: 1100px;
+  margin: 26px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 0 20px;
+}
+.home-card {
+  display: block;
+  padding: 18px;
+  border-radius: 14px;
+  text-decoration: none;
+  border: 1px solid rgba(0,0,0,0.10);
+}
+.home-card h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+.home-card p {
+  margin: 0;
+  line-height: 1.5;
 }
 
-#stickyHeader .logo img {
-  width: 260px !important;     /* force a real width */
-  max-width: 260px !important;
-  height: 72px !important;
-  object-fit: contain !important;
+/* Section blocks */
+.home-section {
+  max-width: 900px;
+  margin: 34px auto;
+  padding: 0 20px;
+}
+.home-section h2 {
+  font-size: 28px;
+  margin: 0 0 10px;
+}
+.home-list {
+  margin: 0;
+  padding-left: 18px;
+  line-height: 1.7;
+}
+.text-link {
+  text-decoration: none;
 }
 
-/* Stop nav from stealing space from logo */
-#stickyHeader .container {
-  justify-content: space-between !important;
-}
-/* Force logo to fit inside the 40px header container */
-#stickyHeader .logo img {
-  height: 40px !important;
-  width: auto !important;
-}
-
-#stickyHeader .logo-mobile img {
-  height: 32px !important;
-  width: auto !important;
-}
-
-/* Safety: prevent clipping if any parent is hiding overflow */
-#stickyHeader,
-#stickyHeader .container {
-  overflow: visible !important;
+/* Responsive */
+@media (max-width: 900px) {
+  .home-grid { grid-template-columns: 1fr; }
+  .home-hero h1 { font-size: 34px; }
 }
