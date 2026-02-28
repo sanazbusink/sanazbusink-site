@@ -25,7 +25,9 @@
     display: none !important;
   }
 }
-
+/* Home hero image */
+.home-hero-media { max-width: 980px; margin: 0 auto 18px; padding: 0 20px; }
+.home-hero-media img { width: 100%; height: auto; display: block; border-radius: 18px; }
 /* Mobile */
 @media (max-width: 767px) {
   #stickyHeader .logo-mobile,
